@@ -1,0 +1,41 @@
+/* Header */
+.site-header {
+  @apply sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-slate-200;
+}
+.header-inner {
+  @apply flex items-center justify-between py-4;
+}
+.brand {
+  @apply text-2xl font-extrabold text-primary;
+}
+.nav {
+  @apply flex items-center gap-4;
+}
+.nav-link {
+  @apply text-sm text-muted px-3 py-2 rounded-md hover:bg-slate-100 transition-colors;
+}
+
+/* Main area */
+.site-main {
+  @apply min-h-[72vh] bg-gradient-to-b from-white to-slate-50;
+  padding: 3rem 0;
+}
+
+/* Footer */
+.site-footer {
+  @apply border-t border-slate-200 bg-white py-6 text-center text-sm text-slate-600;
+}
+
+/* Utility: container used across components */
+.container {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .brand { @apply text-xl }
+  .nav-link { @apply text-sm px-2 }
+}
+
+/* subtle shadow utility */
+.card-shadow { display: none; }
